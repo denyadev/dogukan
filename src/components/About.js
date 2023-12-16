@@ -13,9 +13,9 @@ export default function About() {
                         <p className="text-gray-600 text-lg mb-4">
                             Since 2013, Adanian Way Transportation, a
                             family-owned and operated business, has been a
-                            cornerstone in Toronto's moving industry. We excel
-                            in providing personalized, reliable moving services,
-                            ensuring every relocation is seamless and
+                            cornerstone in Toronto&apos;s moving industry. We
+                            excel in providing personalized, reliable moving
+                            services, ensuring every relocation is seamless and
                             stress-free.
                         </p>
                         <p className="text-gray-600 text-lg mb-4">

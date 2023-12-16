@@ -53,14 +53,14 @@ export default function Footer() {
                 {/* Final Message and Copyright */}
                 <div>
                     <h3 className="text-xl font-semibold mb-4">
-                        Let's Make Your Move Smooth and Stress-Free!
+                        Let&apos;s Make Your Move Smooth and Stress-Free!
                     </h3>
                     <p>
-                        Whether it's a local or long-distance move, residential
-                        or commercial relocation, our team at Adanian Way
-                        Transportation is committed to providing you with
-                        top-notch service. Contact us today, and let's get
-                        started on your hassle-free moving journey!
+                        Whether it&apos;s a local or long-distance move,
+                        residential or commercial relocation, our team at
+                        Adanian Way Transportation is committed to providing you
+                        with top-notch service. Contact us today, and let&apos;s
+                        get started on your hassle-free moving journey!
                     </p>
                 </div>
             </div>

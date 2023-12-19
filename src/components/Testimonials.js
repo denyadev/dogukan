@@ -24,9 +24,9 @@ export default function Testimonials() {
                 </h2>
                 <div className="text-center mt-6 mb-12">
                     <p className="text-gray-600 mx-auto leading-relaxed max-w-2xl">
-                        Our mission is to transform Toronto relocations with
-                        dependable, effortless service, ensuring a smooth and
-                        comforting transition as if managed by family.
+                        Our goal is to transform Toronto relocations with
+                        dependable, personalized, reliable, and stress-free
+                        services that feel like an extension of family care.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 ">

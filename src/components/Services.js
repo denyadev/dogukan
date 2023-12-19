@@ -7,23 +7,30 @@ export default function Services() {
         <div className="bg-gray-100 py-12">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 className="text-4xl font-extrabold text-gray-900 mb-10 text-center underline decoration-orange-500">
-                    Services Offered
+                    Our Services
                 </h2>
 
                 {/* Services List */}
-                <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <div className="grid md:grid-cols-3 gap-8 mb-12">
                     {/* Service Cards */}
                     {[
                         {
                             img: "/local.avif",
-                            title: "Local Moves",
+                            title: "Local Moves and Long-Distance Moves",
                             url: "local-moves",
                             description:
                                 "Efficient and hassle-free relocation within the area.",
                         },
                         {
                             img: "/long.avif",
-                            title: "Long-Distance Moves",
+                            title: "Residential and Commercial Moves",
+                            url: "long-distance-moves",
+                            description:
+                                "Reliable transport and delivery across regions.",
+                        },
+                        {
+                            img: "/special.avif",
+                            title: "Specialty Moving Services",
                             url: "long-distance-moves",
                             description:
                                 "Reliable transport and delivery across regions.",
@@ -58,6 +65,26 @@ export default function Services() {
                             </div>
                         </div>
                     ))}
+                </div>
+                <div className="text-center">
+                    <h2 className="text-4xl font-extrabold text-gray-900 mb-10 text-center underline decoration-orange-500">
+                        Why Choose Adanian Way Transportation
+                    </h2>
+                    <p>
+                        Expertise: Our experienced team navigates every move
+                        with skill and precision. Safety First: We prioritize
+                        the safety and security of your belongings throughout
+                        the entire process. Customized Solutions: Tailoring our
+                        services to meet your specific requirements. Customer
+                        Satisfaction: Your satisfaction is our top priority,
+                        ensuring a stress-free moving experience.
+                    </p>
+                    <Button
+                        size="lg"
+                        className="hover:bg-orange-400 hover:border-orange-700 hover:scale-105 transition transform"
+                    >
+                        Get Quote
+                    </Button>
                 </div>
             </div>
         </div>

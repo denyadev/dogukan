@@ -11,24 +11,26 @@ export default function About() {
                     </h2>
                     <div className="bg-white shadow-xl rounded-lg p-6 relative -mr-16">
                         <p className="text-gray-600 text-lg mb-4">
-                            Since 2013, Adanian Way Transportation, a
-                            family-owned and operated business, has been a
-                            cornerstone in Toronto&apos;s moving industry. We
-                            excel in providing personalized, reliable moving
-                            services, ensuring every relocation is seamless and
-                            stress-free.
+                            Adanian Way Transportation, a new family-owned and
+                            operated business, have 15 years of experience
+                            delivering full service residential moving
+                            throughout Toronto and the Greater Toronto Area
+                            (GTA)
                         </p>
                         <p className="text-gray-600 text-lg mb-4">
-                            Founders M.Gun and D.Ozkan started Adanian Way
-                            Transportation to address the need for dependable,
-                            caring moving services. Our values—reliability,
-                            care, professionalism, and customer-centricity—drive
-                            our mission to offer stress-free moving experiences.
+                            Our core values—reliability, care, professionalism,
+                            customer-centricity, integrity, innovation, and
+                            sustainability—fuel our commitment to delivering
+                            exceptional moving experiences. What sets us apart
+                            is our unwavering dedication to ensuring stress-free
+                            relocations for every client, backed by our
+                            values-driven approach.
                         </p>
-                        <p className="text-gray-600 text-lg">
-                            Our goal is to redefine moving in Toronto, offering
-                            a family-oriented experience that ensures comfort
-                            and assurance throughout the journey to a new home.
+                        <p className="text-gray-600 text-lg mb-4">
+                            Offering more than just moving services; it is about
+                            providing a family-oriented experience, ensuring
+                            each client feels secure and cared for during their
+                            relocation.
                         </p>
                     </div>
                 </div>

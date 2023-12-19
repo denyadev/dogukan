@@ -25,7 +25,12 @@ export default function Hero() {
                     <p className="text-white text-xl mb-6">
                         Reliable and Stress-Free Moving Solutions
                     </p>
-                    <Button size="lg">Get Quote</Button>
+                    <Button
+                        size="lg"
+                        className="hover:bg-orange-400 hover:border-orange-700 hover:scale-105 transition transform"
+                    >
+                        Get Quote
+                    </Button>
                 </div>
             </div>
         </div>

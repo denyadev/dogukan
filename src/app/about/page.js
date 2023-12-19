@@ -1,9 +1,9 @@
 export default function page() {
     return (
         <div>
-            Adanian Way Transportation has been a trusted name in Toronto's
+            Adanian Way Transportation has been a trusted name in Toronto&apos;s
             moving scene since 2013. As a family-owned and operated business,
-            we've built strong connections with Torontonians, prioritizing
+            we&apos;ve built strong connections with Torontonians, prioritizing
             personalized attention and reliability in every move. At Adanian Way
             Transportation, we are passionate about empowering seamless moves
             with care and professionalism. Committed to exceeding expectations,
@@ -15,7 +15,7 @@ export default function page() {
             every aspect of the moving process. This inspired the inception of
             Adanian Way Transportation, fueled by a commitment to redefine
             standards and ensure stress-free relocations for all our clients.
-            Through dedication and commitment, we've achieved significant
+            Through dedication and commitment, we&apos;ve achieved significant
             milestones, such as expanding our fleet to serve larger relocations
             and by being recognized for our exceptional customer service,
             evident in consistently high client satisfaction levels. Our core

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
@@ -6,32 +7,37 @@ export default function Header() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
                 {/* Logo and Navigation */}
                 <Link href="/">
-                    <img src="/logo.png" alt="Logo" className="mr-6 h-8" />
+                    <Image
+                        src="/logo.png"
+                        alt="Logo"
+                        width={100}
+                        height={100}
+                    />
                 </Link>
                 <div className="flex items-center">
                     {/* Replace the path to your logo */}
 
                     <nav className="flex">
                         <Link
-                            href="/about"
+                            href="#about"
                             className="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-slate-900"
                         >
                             About Us
                         </Link>
                         <Link
-                            href="/services"
+                            href="/#services"
                             className="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-slate-900"
                         >
                             Services
                         </Link>
                         <Link
-                            href="/testimonials"
+                            href="/#testimonials"
                             className="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-slate-900"
                         >
                             Testimonials
                         </Link>
                         <Link
-                            href="/contact"
+                            href="/#contact"
                             className="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-slate-900"
                         >
                             Contact Us
@@ -39,7 +45,7 @@ export default function Header() {
                     </nav>
                     {/* Call to Action */}
                     <Link
-                        href="/get-quote"
+                        href="/#contact"
                         className="text-orange-500 bg-white px-5 py-2 rounded-md text-sm font-medium hover:bg-orange-300"
                     >
                         Get Quote

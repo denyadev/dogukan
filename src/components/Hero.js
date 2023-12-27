@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function Hero() {
     return (
@@ -7,7 +8,7 @@ export default function Hero() {
             {/* Background Image with Darkening Overlay */}
             <div className="relative w-full h-full">
                 <Image
-                    src="/bg.avif" // Replace with your image path
+                    src="/banner.jpg" // Replace with your image path
                     layout="fill"
                     objectFit="cover"
                     alt="Background"
@@ -15,7 +16,7 @@ export default function Hero() {
                 <div className="absolute inset-0 bg-black opacity-60"></div>
             </div>
             {/* Content */}
-            <div className="flex-1"></div>{" "}
+            <div className="flex-1"></div>
             {/* This div ensures the content is pushed to the middle */}
             <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
@@ -25,12 +26,14 @@ export default function Hero() {
                     <p className="text-white text-xl mb-6">
                         Reliable and Stress-Free Moving Solutions
                     </p>
-                    <Button
-                        size="lg"
-                        className="hover:bg-orange-400 hover:border-orange-700 hover:scale-105 transition transform"
-                    >
-                        Get Quote
-                    </Button>
+                    <Link href="/#contact">
+                        <Button
+                            size="lg"
+                            className="hover:bg-orange-400 hover:border-orange-700 hover:scale-105 transition transform"
+                        >
+                            Get Quote
+                        </Button>
+                    </Link>
                 </div>
             </div>
         </div>

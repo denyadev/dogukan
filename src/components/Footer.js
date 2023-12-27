@@ -1,5 +1,6 @@
 import { Phone } from "lucide-react";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function Footer() {
     return (
@@ -47,10 +48,15 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <Button variant="secondary">
-                            <Phone className="text-orange-500 mr-2" size={18} />
-                            <a>647-648-0454</a>
-                        </Button>
+                        <Link href="tel:+647-648-0454">
+                            <Button variant="secondary">
+                                <Phone
+                                    className="text-orange-500 mr-2"
+                                    size={18}
+                                />
+                                647-648-0454
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </div>

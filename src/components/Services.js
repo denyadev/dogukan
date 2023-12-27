@@ -3,10 +3,53 @@ import Image from "next/image"; // Ensure to import the Image component
 import Link from "next/link";
 
 export default function Services() {
+    const features = [
+        {
+            title: "Trusted Professionals",
+            description:
+                "Over 15 years of experience in the moving industry. A team of skilled movers dedicated to your satisfaction.",
+        },
+        {
+            title: "Accurate Estimates/No Hidden Fees",
+            description:
+                "Our owners are directly involved in every aspect of the business, ensuring accurate estimates with no hidden fees.",
+        },
+        {
+            title: "Hands-On Ownership",
+            description:
+                "Our owners are directly involved in every aspect of the business, ensuring accountability, dedication, and attention to detail.",
+        },
+        {
+            title: "Licensed and Insured",
+            description:
+                "We are fully licensed and insured, taking full responsibility for the safety of your items.",
+        },
+        {
+            title: "Safety Priority",
+            description:
+                "Safety is emphasized in every step of our moving process, protecting your belongings and our team.",
+        },
+        {
+            title: "Commitment to Values",
+            description:
+                "Our family values of strong work ethic, honesty, and integrity are reflected in every aspect of our service.",
+        },
+        {
+            title: "Customized Solutions",
+            description:
+                "We offer tailored services to meet your individual moving needs, ensuring a personalized experience.",
+        },
+        {
+            title: "Customer-Centric Approach",
+            description:
+                "Your comfort and peace of mind are our top priorities throughout the moving process.",
+        },
+    ];
+
     return (
-        <div className="bg-gray-100 py-12">
+        <section id="services" className="bg-gray-100 py-12">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-4xl font-extrabold text-gray-900 mb-10 text-center underline decoration-orange-500">
+                <h2 className="text-4xl font-extrabold text-gray-900 mb-10 text-center underline decoration-orange-500 uppercase">
                     Our Services
                 </h2>
 
@@ -15,25 +58,46 @@ export default function Services() {
                     {/* Service Cards */}
                     {[
                         {
-                            img: "/local.avif",
-                            title: "Local Moves and Long-Distance Moves",
+                            img: "/services/local.jpg",
+                            title: "Local and Long-Distance Moves",
                             url: "local-moves",
                             description:
-                                "Efficient and hassle-free relocation within the area.",
+                                "From local transitions to long-distance relocations, trust us to handle every aspect of your move with precision and care. We offer affordable solutions for students and seniors.",
                         },
                         {
-                            img: "/long.avif",
-                            title: "Residential and Commercial Moves",
+                            img: "/services/commercial.jpg",
+                            title: "Commercial Moves ",
                             url: "long-distance-moves",
                             description:
-                                "Reliable transport and delivery across regions.",
+                                "We cater to both residential and commercial clients, offering tailored solutions to meet your unique moving needs.",
                         },
                         {
-                            img: "/special.avif",
-                            title: "Specialty Moving Services",
+                            img: "/services/fullpacking.webp",
+                            title: "Full Packing and Unpacking",
                             url: "long-distance-moves",
                             description:
-                                "Reliable transport and delivery across regions.",
+                                "Save time and energy with our expert packing and unpacking services. Our team will carefully pack all your belongings using high-quality materials, ensuring they reach their destination in perfect condition. We offer affordable packing solutions for students and seniors.",
+                        },
+                        {
+                            img: "/services/specialty.jpg",
+                            title: "Speacialty Moves",
+                            url: "long-distance-moves",
+                            description:
+                                "Need to transport delicate items, valuable artwork, or heavy furniture? Our specialized moving services have you covered.",
+                        },
+                        {
+                            img: "/services/disposal.webp",
+                            title: "Disposal of Unwanted Items",
+                            url: "long-distance-moves",
+                            description:
+                                "Simplify your move by letting us handle the disposal of unwanted items. From old furniture to electronics, we can responsibly dispose of or donate items you no longer need, reducing the stress of decluttering before your move.",
+                        },
+                        {
+                            img: "/services/rates.jpg",
+                            title: "Affordable Rates",
+                            url: "long-distance-moves",
+                            description:
+                                "Whether you're a student moving to a new apartment or a senior downsizing to a smaller home, we've got you covered with our special rates. Call now to book your move.",
                         },
                     ].map((service, index) => (
                         <div
@@ -67,18 +131,18 @@ export default function Services() {
                     ))}
                 </div>
                 <div className="text-center">
-                    <h2 className="text-4xl font-extrabold text-gray-900 mb-10 text-center underline decoration-orange-500">
+                    <h2 className="text-4xl font-extrabold text-gray-900 mb-10 text-center underline decoration-orange-500 uppercase">
                         Why Choose Adanian Way Transportation
                     </h2>
-                    <p>
-                        Expertise: Our experienced team navigates every move
-                        with skill and precision. Safety First: We prioritize
-                        the safety and security of your belongings throughout
-                        the entire process. Customized Solutions: Tailoring our
-                        services to meet your specific requirements. Customer
-                        Satisfaction: Your satisfaction is our top priority,
-                        ensuring a stress-free moving experience.
-                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+                        {features.map((feature, index) => (
+                            <ServiceFeature
+                                key={index}
+                                title={feature.title}
+                                description={feature.description}
+                            />
+                        ))}
+                    </div>
                     <Button
                         size="lg"
                         className="hover:bg-orange-400 hover:border-orange-700 hover:scale-105 transition transform"
@@ -87,6 +151,15 @@ export default function Services() {
                     </Button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
+
+const ServiceFeature = ({ title, description }) => {
+    return (
+        <div className="col-span-1 bg-white p-4 shadow-md">
+            <h3 className="text-lg font-semibold mb-2">{title}</h3>
+            <p className="text-sm text-gray-600">{description}</p>
+        </div>
+    );
+};

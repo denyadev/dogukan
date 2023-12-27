@@ -5,13 +5,13 @@ import Link from "next/link";
 
 export default function Contact() {
     return (
-        <div className="bg-gray-100 py-12">
+        <section id="contact" className="bg-gray-100 py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-wrap -mx-4">
                     {/* Contact Information */}
                     <div className="px-4 w-full md:w-1/2">
                         <div className="mb-12 md:mb-0">
-                            <h2 className="text-4xl font-extrabold text-gray-900 mb-10 underline decoration-orange-500">
+                            <h2 className="text-4xl font-extrabold text-gray-900 mb-10 underline decoration-orange-500 uppercase">
                                 Contact Us
                             </h2>
                             <p className="text-gray-600 mb-8">
@@ -85,6 +85,10 @@ export default function Contact() {
                                     />
                                 </div>
                                 <div>
+                                    <label>Service</label>
+                                    Drop Down to select 1 of 7 services
+                                </div>
+                                <div>
                                     <label>Email</label>
                                     <input
                                         type="email"
@@ -101,7 +105,6 @@ export default function Contact() {
                                         rows="4"
                                     ></textarea>
                                 </div>
-
                                 <button
                                     type="submit"
                                     className="bg-orange-500 text-white w-full py-2 hover:bg-orange-600 transition-colors duration-300"
@@ -113,6 +116,6 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

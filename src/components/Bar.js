@@ -10,12 +10,14 @@ export default function Bar() {
 
         <div className="overflow-hidden w-full bg-orange-500 text-white text-sm py-4 font-bold">
             <div className="sponsor-animate whitespace-nowrap">
-                <div className="inline-flex items-center justify-center mx-10 md:mx-24 py-1 space-x-64">
+                <div className="inline-flex items-center justify-center mx-10 md:mx-24 py-1 space-x-64 uppercase">
                     <span>CALL TODAY FOR AN ESTIMATE 647-648-0454</span>
                     <span>70&#162;/pound ONTARIO - QUEBEC</span>
                     <span>ALL CUSTOMERS ARE WELCOME TO COME AND SEE SCALE</span>
                     <span>NO HIDDEN FEES</span>
                     <span>CERTIFIED BY CANADIAN ASSOCIATION OF MOVERS</span>
+                    <span>Discount for Students</span>
+                    <span>Every Monday - Tuesday Piano Moving Specials</span>
                 </div>
             </div>
         </div>

@@ -1,12 +1,14 @@
 import Image from "next/image"; // Ensure to import the Image component
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 export default function About() {
     return (
-        <div className="bg-gray-100 py-12">
+        <section id="about" className="bg-gray-100 py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
                 {/* Text Section */}
                 <div className="flex-1 z-10">
-                    <h2 className="text-4xl font-extrabold text-gray-900 mb-10  underline decoration-orange-500">
+                    <h2 className="text-4xl font-extrabold text-gray-900 mb-10  underline decoration-orange-500 uppercase">
                         About Us
                     </h2>
                     <div className="bg-white shadow-xl rounded-lg p-6 relative -mr-16">
@@ -32,6 +34,9 @@ export default function About() {
                             each client feels secure and cared for during their
                             relocation.
                         </p>
+                        <Link href="/about">
+                            <Button>Learn More</Button>
+                        </Link>
                     </div>
                 </div>
 
@@ -47,6 +52,6 @@ export default function About() {
                     />
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

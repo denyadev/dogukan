@@ -4,9 +4,9 @@ export default function page() {
             <h1>About Us</h1>
             <p>
                 Adanian Way Transportation is a brand new business founded in
-                2023, that wants to be a trusted name in Toronto's moving scene.
-                As a family-owned and operated business, we want to build strong
-                connections with Torontonians, prioritizing personalized
+                2023, that wants to be a trusted name in Toronto&apos;s moving
+                scene. As a family-owned and operated business, we want to build
+                strong connections with Torontonians, prioritizing personalized
                 attention and reliability in every move.
             </p>
 

@@ -1,57 +1,136 @@
-import Image from "next/image";
+"use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Bars3BottomRightIcon } from "@heroicons/react/24/solid";
+
+import Image from "next/image";
+import { Button } from "./ui/button";
 
 export default function Header() {
-    return (
-        <header className="sticky top-0 bg-orange-500 text-white py-4 z-50 shadow-md">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-                {/* Logo and Navigation */}
-                <Link href="/">
-                    <Image
-                        src="/logo.png"
-                        alt="Logo"
-                        width={100}
-                        height={100}
-                    />
-                </Link>
-                <div className="flex items-center">
-                    {/* Replace the path to your logo */}
+  const pathname = usePathname();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-                    <nav className="flex">
-                        <Link
-                            href="#about"
-                            className="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-slate-900"
-                        >
-                            About Us
-                        </Link>
-                        <Link
-                            href="/#services"
-                            className="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-slate-900"
-                        >
-                            Services
-                        </Link>
-                        <Link
-                            href="/#testimonials"
-                            className="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-slate-900"
-                        >
-                            Testimonials
-                        </Link>
-                        <Link
-                            href="/#contact"
-                            className="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-slate-900"
-                        >
-                            Contact Us
-                        </Link>
-                    </nav>
-                    {/* Call to Action */}
-                    <Link
-                        href="/#contact"
-                        className="text-orange-500 bg-white px-5 py-2 rounded-md text-sm font-medium hover:bg-orange-300"
-                    >
-                        Get Quote
-                    </Link>
-                </div>
+  useEffect(() => {
+    setIsMenuOpen(false);
+  }, [pathname]);
+
+  const isActive = (route) => {
+    if (route === "/") {
+      return pathname === route;
+    }
+    return pathname.includes(route);
+  };
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <header className="sticky top-0 bg-orange-500 py-2 shadow-md z-50">
+      <nav className="container mx-auto">
+        <div className="flex flex-col justify-between items-end mx-4">
+          <div className="md:hidden">
+            <div className="flex gap-4 items-center font-bold tracking-tight">
+              Menu
+              <Bars3BottomRightIcon
+                className="w-8 h-8 "
+                onClick={handleMenuToggle}
+              />
             </div>
-        </header>
-    );
+          </div>
+          <div
+            className={`flex-col w-full md:hidden gap-1 mt-2 mr-4 ${
+              isMenuOpen ? "flex" : "hidden md:flex"
+            }`}
+          >
+            <Link
+              href="#about"
+              className={`module-button ${
+                isActive("#about") ? "active-link" : ""
+              }`}
+            >
+              About Us
+            </Link>
+            <Link
+              href="/#services"
+              className={`module-button ${
+                isActive("/#services") ? "active-link" : ""
+              }`}
+            >
+              Our Services
+            </Link>
+            <Link
+              href="/#testimonials"
+              className={`module-button ${
+                isActive("/#testimonials") ? "active-link" : ""
+              }`}
+            >
+              Testimonials
+            </Link>
+            <Link
+              href="/#contact"
+              className={`module-button ${
+                isActive("/#contact") ? "active-link" : ""
+              }`}
+            >
+              Contact Us
+            </Link>
+          </div>
+        </div>
+        <div className="md:flex hidden flex-row gap-4 my-2 mx-4 lg:mx-0 md:justify-between md:items-center">
+          <Link href="/">
+            <Image
+              src={"/logo.png"}
+              alt="Logo"
+              width={64} // Adjust based on your logo's size
+              height={64} // Adjust based on your logo's size
+            />
+          </Link>
+          <div className="flex space-x-8">
+            <Link
+              href="#about"
+              className={`module-button ${
+                isActive("#about") ? "active-link" : ""
+              }`}
+            >
+              About Us
+            </Link>
+            <Link
+              href="/#services"
+              className={`module-button ${
+                isActive("/#services") ? "active-link" : ""
+              }`}
+            >
+              Our Services
+            </Link>
+            <Link
+              href="/#testimonials"
+              className={`module-button ${
+                isActive("/#testimonials") ? "active-link" : ""
+              }`}
+            >
+              Testimonials
+            </Link>
+            <Link
+              href="/#contact"
+              className={`module-button ${
+                isActive("/sponsors") ? "active-link" : ""
+              }`}
+            >
+              Contact Us
+            </Link>
+            <Link
+              href="/#contact"
+              className={`module-button ${
+                isActive("/sponsors") ? "active-link" : ""
+              }`}
+            >
+              <Button variant="secondary">Get Quote</Button>
+            </Link>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
 }

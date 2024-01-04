@@ -12,7 +12,8 @@ export default function Contact() {
             Contact Us
           </h2>
           <p className="text-gray-600 leading-relaxed">
-            Have questions or ready to schedule your move? We're here to help!
+            Have questions or ready to schedule your move? We&apos;re here to
+            help!
           </p>
           <div className="space-y-6">
             <div className="flex items-center">

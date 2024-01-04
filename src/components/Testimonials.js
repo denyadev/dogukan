@@ -57,8 +57,8 @@ export default function Testimonials() {
                             >
                               <div className="flex flex-col items-center space-y-4">
                                 <p className="text-gray-500 md:text-xl dark:text-gray-400">
-                                  "The project was completed on time and
-                                  exceeded our expectations."
+                                  &quot;The project was completed on time and
+                                  exceeded our expectations.&quot;
                                 </p>
                                 <div className="flex items-center space-x-2">
                                   <div className="font-semibold text-sm">

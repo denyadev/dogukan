@@ -6,13 +6,13 @@ export default function Component() {
       <div className="container mx-auto grid gap-8">
         <div className="space-y-4">
           <h2 className="text-2xl font-bold">
-            Let's Make Your Move Smooth and Stress-Free!
+            Let&apos;s Make Your Move Smooth and Stress-Free!
           </h2>
           <p>
-            Whether it's a local or long-distance move, residential or
+            Whether it&apos;s a local or long-distance move, residential or
             commercial relocation, our team at Adanian Way Transportation is
             committed to providing you with top-notch service. Contact us today,
-            and let's get started on your hassle-free moving journey!
+            and let&apos;s get started on your hassle-free moving journey!
           </p>
         </div>
         <div className="space-y-4">

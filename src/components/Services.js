@@ -111,7 +111,7 @@ export default function Services() {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {services.map((service, index) => (
-            <Card>
+            <Card key={index}>
               <CardHeader>
                 <CardTitle>{service.title}</CardTitle>
               </CardHeader>
@@ -145,15 +145,15 @@ export default function Services() {
   );
 }
 
-const ServiceFeature = ({ title, description }) => {
-  return (
-    <Card>
-      <CardHeader>
-        <CardTitle>{title}</CardTitle>
-      </CardHeader>
-      <CardContent>
-        <CardDescription>{description}</CardDescription>
-      </CardContent>
-    </Card>
-  );
-};
+// const ServiceFeature = ({ title, description }) => {
+//   return (
+//     <Card>
+//       <CardHeader>
+//         <CardTitle>{title}</CardTitle>
+//       </CardHeader>
+//       <CardContent>
+//         <CardDescription>{description}</CardDescription>
+//       </CardContent>
+//     </Card>
+//   );
+// };

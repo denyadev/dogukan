@@ -20,7 +20,8 @@ export default function Component() {
         </h1>
         <p className="max-w-2xl mt-6 text-lg md:text-xl">
           We provide professional, fast, and reliable moving services. Whether
-          you're moving locally or across the country, we've got you covered.
+          you&apos;re moving locally or across the country, we&apos;ve got you
+          covered.
         </p>
         <Link
           className="inline-flex mt-8 items-center justify-center h-12 px-6 text-lg font-medium text-white bg-orange-500 rounded-md shadow-lg hover:bg-orange-400"

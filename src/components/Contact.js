@@ -5,111 +5,95 @@ import Link from "next/link";
 
 export default function Contact() {
   return (
-    <section id="contact" className="bg-gray-100 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap -mx-4">
-          {/* Contact Information */}
-          <div className="px-4 w-full md:w-1/2">
-            <div className="mb-12 md:mb-0">
-              <h2 className="text-4xl font-extrabold text-gray-900 mb-10 underline decoration-orange-500 uppercase">
-                Contact Us
-              </h2>
-              <p className="text-gray-600 mb-8">
-                Have questions or ready to schedule your move? We&apos;re here
-                to help!
-              </p>
-              <div className="space-y-6">
-                <div className="flex items-center">
-                  <Phone className="text-orange-500 mr-3" size={24} />
-                  <Link
-                    href="tel:+647-648-0454"
-                    className="text-blue-600 underline decoration-orange-500"
-                  >
-                    CLICK TO CALL
-                  </Link>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="text-orange-500 mr-3" size={24} />
-                  <span className="text-gray-600">hello@adanianmoving.com</span>
-                </div>
-                <div className="flex items-center">
-                  <MapPin className="text-orange-500 mr-3" size={24} />
-                  <span className="text-gray-600">
-                    10 St. Dennis Drive, Toronto, Ontario, M3C 1E9
-                  </span>
-                </div>
-                <div className="flex items-center">
-                  <Clock className="text-orange-500 mr-3" size={24} />
-                  <span className="text-gray-600">
-                    Office Hours: Monday - Friday 8:00 - 5:00pm
-                  </span>
-                </div>
-              </div>
+    <section className="bg-slate-50">
+      <div className=" container mx-auto px-4 md:px-6 py-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex flex-col space-y-4">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+            Contact Us
+          </h2>
+          <p className="text-gray-600 leading-relaxed">
+            Have questions or ready to schedule your move? We're here to help!
+          </p>
+          <div className="space-y-6">
+            <div className="flex items-center">
+              <Phone className="text-orange-500 mr-3" size={24} />
+              <Link
+                href="tel:+647-648-0454"
+                className="text-blue-600 underline decoration-orange-500"
+              >
+                CLICK TO CALL
+              </Link>
+            </div>
+            <div className="flex items-center">
+              <Mail className="text-orange-500 mr-3" size={24} />
+              <span className="text-gray-600">hello@adanianmoving.com</span>
+            </div>
+            <div className="flex items-center">
+              <MapPin className="text-orange-500 mr-3" size={24} />
+              <span className="text-gray-600">
+                10 St. Dennis Drive, Toronto, Ontario, M3C 1E9
+              </span>
+            </div>
+            <div className="flex items-center">
+              <Clock className="text-orange-500 mr-3" size={24} />
+              <span className="text-gray-600">
+                Office Hours: Monday - Friday 8:00 - 5:00pm
+              </span>
             </div>
           </div>
-
-          {/* Contact Form */}
-          <div className="px-4 w-full md:w-1/2">
-            <div className="bg-white p-8 rounded shadow-xl">
-              <form className="space-y-6">
-                <div>
-                  <label>Name</label>
-                  <input
-                    type="text"
-                    placeholder="Your Name"
-                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-orange-500 py-2"
-                  />
-                </div>
-                <div>
-                  <label>Moving Date</label>
-                  <input
-                    type="date"
-                    placeholder="Moving Date:"
-                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-orange-500 py-2"
-                  />
-                </div>
-                <div>
-                  <label>Service</label>
-                  <select
-                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-orange-500 py-2"
-                    placeholder="Select a Service"
-                  >
-                    <option value="">Select a Service</option>
-                    <option value="service1">Service 1</option>
-                    <option value="service2">Service 2</option>
-                    <option value="service3">Service 3</option>
-                    <option value="service4">Service 4</option>
-                    <option value="service5">Service 5</option>
-                    <option value="service6">Service 6</option>
-                    <option value="service7">Service 7</option>
-                  </select>
-                </div>
-                <div>
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    placeholder="Email Address"
-                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-orange-500 py-2"
-                  />
-                </div>
-                <div>
-                  <label>Message</label>
-
-                  <textarea
-                    placeholder="Your Message"
-                    className="w-full border-b-2 border-gray-300 focus:outline-none focus:border-orange-500 py-2"
-                    rows="4"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="bg-orange-500 text-white w-full py-2 hover:bg-orange-600 transition-colors duration-300"
-                >
-                  Send Message
-                </button>
-              </form>
+        </div>
+        <div className="bg-white shadow-lg rounded-lg p-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">
+            Get in Touch
+          </h2>
+          <form>
+            <div className="mb-4">
+              <label className="block text-gray-600 mb-2">Name</label>
+              <input
+                className="w-full px-3 py-2 border rounded-md text-gray-700"
+                type="text"
+              />
             </div>
-          </div>
+            <div className="mb-4">
+              <label className="block text-gray-600 mb-2">Moving Date</label>
+              <input
+                className="w-full px-3 py-2 border rounded-md text-gray-700"
+                type="date"
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-gray-600 mb-2">Service</label>
+              <select className="w-full px-3 py-2 border rounded-md text-gray-700">
+                <option>Service 1</option>
+                <option>Service 2</option>
+                <option>Service 3</option>
+                <option>Service 4</option>
+                <option>Service 5</option>
+                <option>Service 6</option>
+                <option>Service 7</option>
+              </select>
+            </div>
+            <div className="mb-4">
+              <label className="block text-gray-600 mb-2">Email Address</label>
+              <input
+                className="w-full px-3 py-2 border rounded-md text-gray-700"
+                type="email"
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-gray-600 mb-2">Message</label>
+              <textarea
+                className="w-full px-3 py-2 border rounded-md text-gray-700"
+                rows="4"
+              />
+            </div>
+            <button
+              className="w-full py-2 px-4 bg-orange-500 text-white rounded-md hover:bg-orange-400"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </div>
     </section>

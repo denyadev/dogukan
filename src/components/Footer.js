@@ -1,65 +1,116 @@
-import { Phone } from "lucide-react";
-import { Button } from "./ui/button";
-import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
-export default function Footer() {
-    return (
-        <footer className="bg-orange-500 text-white py-12">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left place-content-end ">
-                {/* Final Message and Copyright */}
-                <div>
-                    <h3 className="text-xl font-semibold mb-4">
-                        Let&apos;s Make Your Move Smooth and Stress-Free!
-                    </h3>
-                    <p>
-                        Whether it&apos;s a local or long-distance move,
-                        residential or commercial relocation, our team at
-                        Adanian Way Transportation is committed to providing you
-                        with top-notch service. Contact us today, and let&apos;s
-                        get started on your hassle-free moving journey!
-                    </p>
-                </div>
-                <div></div>
-                {/* Contact Section */}
-                <div>
-                    <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
-                    <p>
-                        Have questions or ready to schedule your move? Contact
-                        our friendly team today.
-                    </p>
-                    <ul className="mt-4">
-                        <li>Phone: 647-648-0454</li>
-                        <li>Email: hello@adanianmoving.com</li>
-                        <li>
-                            Visit Us: 10 St. Dennis Drive, Toronto, Ontario, M3C
-                            1E9
-                        </li>
-                    </ul>
-                </div>
+export default function Component() {
+  return (
+    <footer className="bg-orange-500 text-white py-12 px-4 md:px-6">
+      <div className="container mx-auto grid gap-8">
+        <div className="space-y-4">
+          <h2 className="text-2xl font-bold">
+            Let's Make Your Move Smooth and Stress-Free!
+          </h2>
+          <p>
+            Whether it's a local or long-distance move, residential or
+            commercial relocation, our team at Adanian Way Transportation is
+            committed to providing you with top-notch service. Contact us today,
+            and let's get started on your hassle-free moving journey!
+          </p>
+        </div>
+        <div className="space-y-4">
+          <h3 className="text-xl font-bold">Contact Us</h3>
+          <p>
+            Have questions or ready to schedule your move? Contact our friendly
+            team today.
+          </p>
+          <div className="space-y-2">
+            <div className="flex items-center space-x-2">
+              <PhoneIcon className="h-6 w-6" />
+              <a className="text-white underline" href="#">
+                647-648-0454
+              </a>
             </div>
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <hr className="my-4 border-gray-200" />
-                <div className="flex justify-between items-center">
-                    <div>
-                        <p className="text-sm">
-                            © {new Date().getFullYear()} Adanian Way
-                            Transportation. All rights reserved.
-                        </p>
-                    </div>
+            <div className="flex items-center space-x-2">
+              <MailIcon className="h-6 w-6" />
+              <a className="text-white underline" href="#">
+                hello@adanianmoving.com
+              </a>
+            </div>
+            <div className="flex items-center space-x-2">
+              <LocateIcon className="h-6 w-6" />
+              <span>10 St. Dennis Drive, Toronto, Ontario, M3C 1E9</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div className="flex items-center justify-between">
+          <p>© 2024 Adanian Way Transportation. All rights reserved.</p>
+          <Button className="border-white text-black" variant="outline">
+            <PhoneIcon className="h-6 w-6 mr-2" />
+            Call 647-648-0454
+          </Button>
+        </div>
+      </div>
+    </footer>
+  );
+}
 
-                    <div>
-                        <Link href="tel:+647-648-0454">
-                            <Button variant="secondary">
-                                <Phone
-                                    className="text-orange-500 mr-2"
-                                    size={18}
-                                />
-                                647-648-0454
-                            </Button>
-                        </Link>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    );
+function LocateIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="2" x2="5" y1="12" y2="12" />
+      <line x1="19" x2="22" y1="12" y2="12" />
+      <line x1="12" x2="12" y1="2" y2="5" />
+      <line x1="12" x2="12" y1="19" y2="22" />
+      <circle cx="12" cy="12" r="7" />
+    </svg>
+  );
+}
+
+function MailIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <rect width="20" height="16" x="2" y="4" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    </svg>
+  );
+}
+
+function PhoneIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+    </svg>
+  );
 }

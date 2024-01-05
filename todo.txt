@@ -1,0 +1,4 @@
+- fix animation for banner
+- add services pages
+- fix header
+- add select option to form and validation and form action to send

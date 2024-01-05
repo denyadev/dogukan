@@ -2,20 +2,73 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
+const services = [
+    {
+        title: "Local and Long-Distance Moving Services",
+        whatWeOffer: {
+            subtitle: "What We Offer",
+            description:
+                "From local transitions to long-distance relocations, trust us to handle every aspect of your move with precision and care.",
+            keyFeatures: [
+                {
+                    title: "Timely and Reliable Transport",
+                    description:
+                        "With a network of trusted partners and a fleet of reliable vehicles, we guarantee timely and secure transportation of your possessions to your new destination.",
+                },
+                {
+                    title: "Secure Packing and Handling",
+                    description:
+                        "From careful packing of delicate items to securing larger furniture, we ensure that your possessions are transported safely and arrive at your new location in pristine condition.",
+                },
+                {
+                    title: "Customer-Centric Approach",
+                    description:
+                        "Prioritizing your comfort and peace of mind throughout the move.",
+                },
+                {
+                    title: "Local Expertise",
+                    description:
+                        "With our extensive knowledge of the local area, we navigate the logistics efficiently, avoiding potential hurdles and ensuring a smooth transition to your new location. Rest assured, your belongings will reach their destination without unnecessary delays.",
+                },
+                {
+                    title: "Continuous Communication",
+                    description:
+                        "Throughout the long-distance move, we maintain clear communication, providing updates on the progress of your relocation to keep you informed every step of the way.",
+                },
+            ],
+        },
+        whyChooseUs: {
+            subtitle: "Why Choose Us for Local or Long-Distance Moves",
+            reasons: [
+                {
+                    title: "Trusted Professionals",
+                    description:
+                        "With 15 years of expertise, we specialize in navigating long-distance relocations efficiently.",
+                },
+                // ... other reasons ...
+            ],
+        },
+        ourProcess: {
+            subtitle: "Our Process",
+            steps: [
+                {
+                    title: "Free Estimate",
+                    description:
+                        "Accurate estimates with no hidden fees at all. Our owners are directly involved in every aspect of the business. If you like, you can have us come over to actually see what needs to be moved for a more accurate estimate.",
+                },
+                // ... other steps ...
+            ],
+        },
+        callToAction: {
+            text: "Planning a local or long-distance move? Contact us today for a consultation and personalized quote. Let us handle the complexities while you focus on the excitement of starting anew in your new location!",
+            buttonText: "Call Button",
+        },
+    },
+    // Add more services as needed
+];
+
 export default function ServicePage() {
     const [selectedService, setSelectedService] = useState(null);
-
-    const services = [
-        {
-            id: 1,
-            title: "Local Moves",
-            description:
-                "Efficient, hassle-free relocation within your local area.",
-            image: "/local.avif",
-            detail: "Detailed information about local moves...",
-        },
-        // Add more services as needed
-    ];
 
     const handleLearnMore = (serviceId) => {
         const service = services.find((s) => s.id === serviceId);

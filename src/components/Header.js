@@ -27,7 +27,7 @@ export default function Header() {
   };
 
   return (
-    <header className="sticky top-0 bg-orange-500 py-2 shadow-md z-50">
+    <header className="sticky top-0 bg-orange-500 py-2 shadow-md z-50 text-white">
       <nav className="container mx-auto">
         <div className="flex flex-col justify-between items-end mx-4">
           <div className="md:hidden">
@@ -45,7 +45,7 @@ export default function Header() {
             }`}
           >
             <Link
-              href="#about"
+              href="/#about"
               className={`module-button ${
                 isActive("#about") ? "active-link" : ""
               }`}
@@ -59,6 +59,14 @@ export default function Header() {
               }`}
             >
               Our Services
+            </Link>
+            <Link
+              href="/#why-us"
+              className={`module-button ${
+                isActive("/#services") ? "active-link" : ""
+              }`}
+            >
+              Why Us
             </Link>
             <Link
               href="/#testimonials"
@@ -89,7 +97,7 @@ export default function Header() {
           </Link>
           <div className="flex space-x-8">
             <Link
-              href="#about"
+              href="/#about"
               className={`module-button ${
                 isActive("#about") ? "active-link" : ""
               }`}
@@ -103,6 +111,14 @@ export default function Header() {
               }`}
             >
               Our Services
+            </Link>
+            <Link
+              href="/#why-us"
+              className={`module-button ${
+                isActive("/#services") ? "active-link" : ""
+              }`}
+            >
+              Why Us
             </Link>
             <Link
               href="/#testimonials"

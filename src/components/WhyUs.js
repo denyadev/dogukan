@@ -36,7 +36,8 @@ export default function WhyUs() {
             <CardContent className="text-sm">
               Our owners are directly involved in every aspect of the business.
               This hands-on approach ensures a level of accountability,
-              dedication, and attention to detail that you won't find elsewhere.
+              dedication, and attention to detail that you won&apos;t find
+              elsewhere.
             </CardContent>
           </Card>
           <Card className="border border-orange-500">

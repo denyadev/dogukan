@@ -19,7 +19,7 @@ export default function Contact() {
             <div className="flex items-center">
               <Phone className="text-orange-500 mr-3" size={24} />
               <Link
-                href="tel:+647-648-0454"
+                href="tel:6476480454"
                 className="text-blue-600 underline decoration-orange-500"
               >
                 CLICK TO CALL
@@ -27,7 +27,12 @@ export default function Contact() {
             </div>
             <div className="flex items-center">
               <Mail className="text-orange-500 mr-3" size={24} />
-              <span className="text-gray-600">info@adasamoving.com</span>
+              <Link
+                href="mailto: abc@example.com"
+                className="text-blue-600 underline decoration-orange-500"
+              >
+                info@adasamoving.com
+              </Link>
             </div>
             <div className="flex items-center">
               <MapPin className="text-orange-500 mr-3" size={24} />

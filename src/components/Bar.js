@@ -4,7 +4,7 @@ export default function Bar() {
       <div className="sponsor-animate whitespace-nowrap">
         <div className="whitespace-nowrap animate-marquee">
           <span className="mx-16">CALL TODAY FOR AN ESTIMATE 647-648-0454</span>
-          <span className="mx-16">70¢/pound ONTARIO - QUEBEC</span>
+          <span className="mx-16">60¢/pound ONTARIO - QUEBEC</span>
           <span className="mx-16">
             ALL CUSTOMERS ARE WELCOME TO COME AND SEE SCALE
           </span>

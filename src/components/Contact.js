@@ -28,7 +28,7 @@ export default function Contact() {
             <div className="flex items-center">
               <Mail className="text-orange-500 mr-3" size={24} />
               <Link
-                href="mailto: abc@example.com"
+                href="mailto: info@adasamoving.com"
                 className="text-blue-600 underline decoration-orange-500"
               >
                 info@adasamoving.com

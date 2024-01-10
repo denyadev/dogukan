@@ -198,6 +198,28 @@
         }
       ]
     },
+    "whatWeOffer2": {
+      "subtitle": "What We Offer",
+      "description": "Once you've arrived at your new destination, our team will efficiently unpack your belongings, allowing you to settle in without the hassle.",
+      "keyFeatures": [
+        {
+          "title": "Systematic Unpacking",
+          "description": "Our team follows a structured approach to unpacking, making the process organized and efficient."
+        },
+        {
+          "title": "Unpacking and Placement",
+          "description": "We don't just unpack; we also help arrange your items in their designated spaces."
+        },
+        {
+          "title": "Waste Removal",
+          "description": "Leave the empty boxes and packing materials to us. We'll take care of the cleanup, leaving you with a clutter-free space."
+        },
+        {
+          "title": "Personalized Unpacking",
+          "description": "Let us know your preferences, and we'll customize the unpacking process to suit your needs."
+        }
+      ]
+    },
     "unpackingServices": {
       "subtitle": "Unpacking Services",
       "description": "Once you've arrived at your new destination, our team will efficiently unpack your belongings, allowing you to settle in without the hassle.",
@@ -422,7 +444,7 @@
     },
     "callToAction": {
       "text": [
-        "Ready to simplify your move and rid yourself of unwanted items?",
+        "Get Started on Your Move and Rid Yourself of Unwanted Items!",
         "Contact us today to discuss your disposal needs.",
         "Our team is here to ensure a hassle-free and environmentally conscious disposal process."
       ],

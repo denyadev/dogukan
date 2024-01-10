@@ -15,6 +15,7 @@ export default function ServicePage({ params }) {
             />
             {/* Initialize and configure gtag.js */}
             <Script
+                id="google-analytics"
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `

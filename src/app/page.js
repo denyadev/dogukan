@@ -20,6 +20,7 @@ export default function Home() {
             />
             {/* Initialize and configure gtag.js */}
             <Script
+                id="google-analytics"
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `

@@ -55,7 +55,8 @@ export default function Component() {
                 <hr />
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     <p>
-                        © 2024 Adanian Way Transportation. All rights reserved.
+                        © 2024 Adasa Moving & Transportation Inc. All rights
+                        reserved.
                     </p>
                     <Link href="tel:6476480454">
                         <Button

@@ -200,7 +200,8 @@ function Footer({ service }) {
                 <hr />
                 <div className="flex flex-col md:flex-row items-center justify-between">
                     <p>
-                        © 2024 Adanian Way Transportation. All rights reserved.
+                        © 2024 Adasa Moving & Transportation Inc. All rights
+                        reserved.
                     </p>
                     <Button
                         className="border-white text-black mt-6 md:mt-0"
